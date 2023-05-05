@@ -5,15 +5,16 @@
 }
 
 body {
-  font-family: Poppins,
+  font-family:
+    Poppins,
     sans-serif;
   display: flex;
   flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	margin: 0;
-	overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
   background-color: skyblue;
 }
 
