@@ -86,13 +86,16 @@ body {
 }
 
 .repo {
-  text-decoration: none;
   /* color: ; */
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
   /* background-color: ; */
+}
+
+.repos {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
