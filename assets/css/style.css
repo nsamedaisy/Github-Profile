@@ -31,8 +31,8 @@ body {
   padding: 16px;
   margin-bottom: 32px;
   box-shadow:
-  10px 5px 10px #0b0b7afd,
-  10px 10px 40px #3434c2cc;
+    10px 5px 10px #0b0b7afd,
+    10px 10px 40px #3434c2cc;
 }
 
 .card {
@@ -41,8 +41,8 @@ body {
   padding: 3rem;
   margin: 0 1.5rem;
   box-shadow:
-  0 5px 10px #3434c2cc,
-  0 15px 40px #3434c2cc;
+    0 5px 10px #3434c2cc,
+    0 15px 40px #3434c2cc;
   border-radius: 20px;
   color: #05aef1;
   background-color: whitesmoke;
@@ -54,8 +54,8 @@ body {
   height: 150px;
   width: 150px;
   box-shadow:
-  0 5px 10px #05aef1,
-  0 15px 40px #3434c2cc;
+    0 5px 10px #05aef1,
+    0 15px 40px #3434c2cc;
 }
 
 .user-info {
@@ -86,7 +86,7 @@ p {
 
 .repo {
   color: #e607079f;
-  font-size:16px;
+  font-size: 16px;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -98,12 +98,11 @@ p {
 
 @media screen and (max-width: 500px) {
   .card {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .user-form {
     max-width: 400px;
   }
-
 }

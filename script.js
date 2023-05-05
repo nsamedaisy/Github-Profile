@@ -11,11 +11,10 @@ async function getUser(username) {
     createUserCard(data)
     getRepos(username)
   }
-  catch(err) {
+  catch (err) {
     if(err.response.status == 404) {
       createErrorCard('No profile with this user name')
     }
-    
   }
 }
 
@@ -24,9 +23,9 @@ async function getRepos(username) {
     const {data} = await axios(APIURL + username + '/repos?sort=created')
 
     addReposToCard(data)
-  } catch(err) {
+  }
+  catch (err) {
       createErrorCard('Problem fetching repos')
-    
   }
 }
 
@@ -65,17 +64,17 @@ function createErrorCard(mgs) {
 function addReposToCard(repos) {
   const reposEl = document.getElementById('repos')
 
-  repos    //looping tru my repo
-      .slice(0, 3)
-      .forEach(repo => {
-        const repoEl = document.createElement('a')
-        repoEl.classList.add('repo')
-        repoEl.href = repo.html_url
-        repoEl.target = '_blank'
-        repoEl.innerText = repo.name
+  repos // looping tru my repo
+    .slice(0, 3)
+    .forEach(repo => {
+      const repoEl = document.createElement('a')
+      repoEl.classList.add('repo')
+      repoEl.href = repo.html_url
+      repoEl.target = '_blank'
+      repoEl.innerText = repo.name
 
-        reposEl.appendChild(repoEl)
-       })
+      reposEl.appendChild(repoEl)
+    })
 }
 
 form.addEventListener('submit', (e) => {
@@ -83,8 +82,8 @@ form.addEventListener('submit', (e) => {
 
   const user = search.value
 
-  if(user) {
-    getUser (user)
+  if (user) {
+    getUser(user)
 
     search.value = ''
   }
