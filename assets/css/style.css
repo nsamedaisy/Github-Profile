@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -111,4 +111,4 @@ p {
   .user-form {
     max-width: 400px;
   }
-} */
+}
