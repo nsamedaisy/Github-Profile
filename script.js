@@ -4,7 +4,6 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
-
 // we will use axios to handle our request through async/await
 // Axios is an open-source, promise-based HTTP client. It uses JS promises to send HTTP requests and manage their responses and it fetches APIs that are not available in the basic Fetch API.
 
