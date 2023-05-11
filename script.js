@@ -4,6 +4,7 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
+
 // we will use axios to handle our request through async/await
 // Axios is an open-source, promise-based HTTP client. It uses JS promises to send HTTP requests and manage their responses and it fetches APIs that are not available in the basic Fetch API.
 
@@ -79,8 +80,8 @@ function addReposToCard (repos) {
     .forEach(repo => {
       const repoEl = document.createElement('a')
       repoEl.classList.add('repo')
-      repoEl.href = repo.html_url   // points to the actual repository url
-      repoEl.target = '_blank'      // opens in a new window
+      repoEl.href = repo.html_url // points to the actual repository url
+      repoEl.target = '_blank' // opens in a new window
       repoEl.innerText = repo.name
 
       reposEl.appendChild(repoEl)
@@ -88,7 +89,6 @@ function addReposToCard (repos) {
 }
 
 form.addEventListener('submit', (e) => {
-
   // prevents the auto submission of the form
   e.preventDefault()
 
