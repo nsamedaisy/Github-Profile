@@ -13,7 +13,7 @@ const main = document.getElementById('main')
 
 async function getUser (username) {
   try {
-    const { data } = await axios(APIURL + username)
+    const { data } = await axios.get(APIURL + username)
 
     createUserCard(data)
     getRepos(username)
@@ -26,7 +26,7 @@ async function getUser (username) {
 
 async function getRepos (username) {
   try {
-    const { data } = await axios(APIURL + username + '/repos?sort=created') // sort=created get the latest repos
+    const { data } = await axios.get(APIURL + username + '/repos?sort=created') // sort=created get the latest repos
 
     addReposToCard(data)
   } catch (err) {
@@ -73,7 +73,7 @@ function addReposToCard (repos) {
 
   repos // looping tru my repo
 
-    .slice(0, 3) // slice the repo array to a desired number
+    .slice(0, 4) // slice the repo array to a desired number
 
   // for each repos we create our links
     .forEach(repo => {
