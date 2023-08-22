@@ -31,8 +31,8 @@ body {
   padding: 16px;
   margin-bottom: 32px;
   box-shadow:
-    10px 5px 10px #0b0b7afd,
-    10px 10px 40px #3434c2cc;
+    5px 2px 5px #0b0b7afd,
+    5px 4px 15px #3434c2cc;
 }
 
 .card {
@@ -41,8 +41,8 @@ body {
   padding: 3rem;
   margin: 0 1.5rem;
   box-shadow:
-    0 5px 10px #3434c2cc,
-    0 15px 40px #3434c2cc;
+    0 2px 7px #3434c2cc,
+    0 8px 15px #3434c2cc;
   border-radius: 20px;
   color: #05aef1;
   background-color: whitesmoke;
@@ -54,8 +54,8 @@ body {
   height: 150px;
   width: 150px;
   box-shadow:
-    0 5px 8px #05aef1,
-    0 5px 15px #3434c2cc;
+    0 2px 5px #05aef1,
+    0 3px 8px #3434c2cc;
 }
 
 .user-info {
