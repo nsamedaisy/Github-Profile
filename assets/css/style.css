@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;400&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Poppins,
+  font-family:
+    Poppins,
     sans-serif;
   display: flex;
   flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	margin: 0;
-	overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-color: lightblue;
 }
 
-/* .user-form {
+.user-form {
   width: 100%;
   max-width: 700px;
 }
@@ -24,19 +26,13 @@ body {
 .user-form input {
   width: 100%;
   display: block;
-  background-color: ;
   border: none;
   border-radius: 10px;
   padding: 16px;
-  color: ;
   margin-bottom: 32px;
   box-shadow:
-  0 5px 10px #9aa0b90d,
-  0 15px 40px #0000001a;
-}
-
-.user-form input:focus {
-  outline: none;
+    5px 2px 5px #0b0b7afd,
+    5px 4px 15px #3434c2cc;
 }
 
 .card {
@@ -45,26 +41,34 @@ body {
   padding: 3rem;
   margin: 0 1.5rem;
   box-shadow:
-  0 5px 10px #9aa0b90d,
-  0 15px 40px #0000001a;
+    0 2px 7px #3434c2cc,
+    0 8px 15px #3434c2cc;
   border-radius: 20px;
-  background-color: ;
+  color: #05aef1;
+  background-color: whitesmoke;
 }
 
-.avater {
+.avatar {
   border-radius: 50%;
-  border: 10px solid #2a2a72;
+  border: none;
   height: 150px;
   width: 150px;
+  box-shadow:
+    0 2px 5px #05aef1,
+    0 3px 8px #3434c2cc;
 }
 
 .user-info {
-  color: ;
   margin-left: 32px;
 }
 
 .user-info h2 {
-  margin-top: 0;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .user-info ul {
@@ -75,34 +79,36 @@ body {
   justify-content: space-between;
 }
 
-.user-info ul li {
-  display: flex;
-  align-items: center;
+.user-info ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #05aef1;
 }
 
 .user-info ul li strong {
-  font-size: 0.9rem;
+  font-size: 18px;
   margin-left: 8px;
 }
 
 .repo {
-  text-decoration: none;
-  color: ;
-  font-size: 0.7rem;
+  color: #e607079f;
+  font-size: 15px;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
-  background-color: ;
 }
 
-/* @media screen and (max-width: 500px) {
+.repos {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
   .card {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .user-form {
     max-width: 400px;
   }
-
-}  */
+}
